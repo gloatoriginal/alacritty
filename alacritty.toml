@@ -2,15 +2,17 @@
 [terminal.shell]
 ## Basic zsh
 #program = '/usr/bin/zsh'
-
+## Tmux start for multiple panes
 program = '/usr/bin/tmux'
 args = ['new-session', '-A', '-D', '-s', 'main']
 
 [window]
-decorations_theme_variant = "Dark"
+startup_mode = "Windowed"
+title = "Alacritty"
+dynamic_title = true
 
 [scrolling]
-history = 10000
+history = 54321
 multiplier = 3
 
 # Upstream: github.com/bluz71/vim-moonfly-colors
