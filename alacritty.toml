@@ -1,5 +1,10 @@
+## Zsh or tmux
 [terminal.shell]
-program = '/usr/bin/zsh'
+## Basic zsh
+#program = '/usr/bin/zsh'
+
+program = '/usr/bin/tmux'
+args = ['new-session', '-A', '-D', '-s', 'main']
 
 [window]
 decorations_theme_variant = "Dark"
