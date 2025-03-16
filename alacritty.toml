@@ -15,6 +15,9 @@ dynamic_title = true
 history = 54321
 multiplier = 3
 
+# THEME START
+##############
+
 # From iTerm2 Pastel Dark theme
 
 # Default colors
