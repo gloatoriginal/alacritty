@@ -6,8 +6,14 @@ if [ $# -ne 1 ]; then
         exit 1
 fi
 
+th_nm=$(awk '/# THEME START/{print NR}' alacritty.toml)
+
+dl_nm="$(($th_nm+2))"',$d'
+#echo $th_nm
+
+
 if [[ $1 =~ ".toml" ]]; then
-        sed -i '18,$d' alacritty.toml && cat $1 >> alacritty.toml
+        sed -i $dl_nm alacritty.toml && cat $1 >> alacritty.toml
 else
-        sed -i '18,$d' alacritty.toml && cat "$1.toml" >> alacritty.toml
+        sed -i $dl_nm alacritty.toml && cat "$1.toml" >> alacritty.toml
 fi
