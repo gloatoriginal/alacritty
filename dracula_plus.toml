@@ -1,22 +1,3 @@
-## Zsh or tmux
-[terminal.shell]
-## Basic zsh
-#program = '/usr/bin/zsh'
-## Tmux start for multiple panes
-program = '/usr/bin/tmux'
-args = ['new-session', '-A', '-D', '-s', 'main']
-
-[window]
-startup_mode = "Windowed"
-title = "Alacritty"
-dynamic_title = true
-
-[scrolling]
-history = 54321
-multiplier = 3
-
-# THEME START
-##############
 # Colors (Dracula+)
 
 [colors.primary]
